@@ -6,26 +6,14 @@
 3. `java -jar money-transfer-service-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
 ## Usage
-* GET /accounts/{id}
-  returns Account by provided id
-
-* GET /accounts
-  returns all accounts
-
-* POST /accounts
-   body sample: `{"id" : "1", "balance" : "1"}`
-   creates Account
-
-* PUT /accounts
-  body sample: `{"id" : "1", "balance" : "1"}`
-  updates Account
-
-* DELETE /accounts/{id}
-  deletes Account by provided id
-
-* PUT /accounts/transfer
-  body sample: `{"senderId" : "1", "receiverId" : "2", "amount" : "1"}`
-  transfer money  from one account to another
+| HTTP Method | Endpoint           | Body                                                     | Description |
+| ------------|------------------- | -------------------------------------------------------- | -----------------|
+| GET         | /accounts/{id}     |                                                          | returns account by provided id |
+| GET         | /accounts          |                                                          | returns all accounts |
+| POST        | /accounts          | `{"id" : "1", "balance" : "1"}`                          | creates account |
+| PUT         | /accounts          | `{"id" : "1", "balance" : "1"}`                          | updates account|
+| DELETE      | /accounts/{id}     |                                                          | deletes account by provided id|
+| PUT         | /accounts/transfer | `{"senderId" : "1", "receiverId" : "2", "amount" : "1"}` | transfers money from one account to another|
 
 ## Using SwaggerUI
 * Download [SwaggerUI](https://github.com/swagger-api/swagger-ui)
