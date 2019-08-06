@@ -1,11 +1,11 @@
-# AccountService
+# Money Transfer Service
 
-##Installation
+## Installation
 1. `mvn clean package`
 2. `cd target`
 3. `java -jar money-transfer-service-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
-##Usage
+## Usage
 * GET /accounts/{id}
   returns Account by provided id
 
@@ -27,7 +27,7 @@
   body sample: `{"senderId" : "1", "receiverId" : "2", "amount" : "1"}`
   transfer money  from one account to another
 
-##Using SwaggerUI
+## Using SwaggerUI
 * Download [SwaggerUI](https://github.com/swagger-api/swagger-ui)
 * Unzip it
 * Open `dist` folder
